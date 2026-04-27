@@ -9,3 +9,7 @@ class SellerRead(SellerBase):
 
 class SellerCreate(SellerBase):
     password: str
+
+class SellerLogin(BaseModel):
+    email: EmailStr
+    password: str
