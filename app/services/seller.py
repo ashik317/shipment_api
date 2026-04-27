@@ -17,6 +17,6 @@ class SellerService:
             password=password_context.hash(credentials.password)
         )
         self.session.add(seller)
-        await self.session.commit()
+        await self.session.commit() 
         await self.session.refresh(seller)
         return seller

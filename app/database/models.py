@@ -22,9 +22,11 @@ class Shipment(SQLModel, table=True):
     status: ShipmentStatus
     estimated_delivery: datetime
 
+    
 class Seller(SQLModel, table=True):
     __tablename__ = "seller"
 
     id: Optional[int] = Field(default=None, primary_key=True)
+    name: str  # ← add this
     email: EmailStr = Field(unique=True, index=True)
     password: str

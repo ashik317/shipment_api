@@ -23,3 +23,4 @@ class ShipmentCreate(BaseShipment):
 class ShipmentUpdate(BaseModel):
     status: ShipmentStatus | None = Field(default=None)
     estimated_delivery: datetime | None = Field(default=None)
+
