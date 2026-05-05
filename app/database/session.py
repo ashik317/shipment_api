@@ -9,7 +9,7 @@ from ..config import DATABASE_URL
 
 
 engine = create_async_engine(
-    url=DATABASE_URL,  # ← fix here
+    url=DATABASE_URL,
     echo=True,
 )
 

@@ -5,7 +5,8 @@ class SellerBase(BaseModel):
     email: EmailStr
 
 class SellerRead(SellerBase):
-    pass
+    id: int
+    model_config = {"from_attributes": True}
 
 class SellerCreate(SellerBase):
     password: str
